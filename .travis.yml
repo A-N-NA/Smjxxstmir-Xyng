@@ -4,5 +4,6 @@ before_install:
   - wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2838/forge-1.12.2-14.23.5.2838-mdk.zip
   - unzip -n forge-1.12.2-14.23.5.2838-mdk.zip
   - rm forge-1.12.2-14.23.5.2838-mdk.zip
+  - chmod a+x gradlew
 install: ./gradlew setupCiWorkspace
 script: ./gradlew build
